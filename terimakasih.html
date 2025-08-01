@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terima Kasih - Lembaga Pertanian XYZ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Gaya spesifik untuk halaman terima kasih */
+        .thank-you-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 180px); /* Sesuaikan tinggi agar konten berada di tengah, kurangi tinggi header/footer */
+            text-align: center;
+            background-color: var(--background-light);
+            padding: 50px 20px;
+        }
+
+        .thank-you-section .icon {
+            font-size: 5rem;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            animation: bounceIn 1s ease-out;
+        }
+
+        .thank-you-section h2 {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .thank-you-section p {
+            font-size: 1.2rem;
+            color: var(--light-text-color);
+            max-width: 700px;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        /* Animasi */
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.1);
+                opacity: 0;
+            }
+            60% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Responsif sederhana */
+        @media (max-width: 768px) {
+            .thank-you-section h2 {
+                font-size: 2.2rem;
+            }
+            .thank-you-section p {
+                font-size: 1rem;
+            }
+            .thank-you-section .icon {
+                font-size: 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo Lembaga Pertanian XYZ">
+                <h1>Lembaga Pertanian XYZ</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#beranda">Beranda</a></li>
+                    <li><a href="index.html#tentang-kami">Tentang Kami</a></li>
+                    <li class="dropdown">
+                        <a href="index.html#program" class="dropbtn">Program & Layanan <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="index.html#penelitian">Penelitian & Pengembangan</a>
+                            <a href="index.html#pelatihan">Pelatihan & Edukasi</a>
+                            <a href="index.html#konsultasi">Konsultasi Pertanian</a>
+                            <a href="index.html#inovasi">Inovasi Teknologi</a>
+                        </div>
+                    </li>
+                    <li><a href="index.html#publikasi">Publikasi</a></li>
+                    <li><a href="index.html#berita-acara">Berita & Acara</a></li>
+                    <li><a href="index.html#galeri">Galeri</a></li>
+                    <li><a href="index.html#kontak">Kontak</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="thank-you-section">
+            <i class="fas fa-check-circle icon"></i>
+            <h2>Terima Kasih Atas Pesan Anda!</h2>
+            <p>Pesan Anda telah berhasil kami terima. Tim kami akan segera meninjau dan merespons pertanyaan atau permintaan Anda dalam waktu 1-2 hari kerja.</p>
+            <p>Untuk informasi lebih lanjut, jangan ragu untuk menjelajahi bagian lain dari website kami atau hubungi kami kembali.</p>
+            <a href="index.html" class="btn">Kembali ke Beranda</a>
+            <a href="index.html#program" class="btn btn-secondary" style="margin-left: 15px;">Lihat Program Kami</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Lembaga Pertanian XYZ</h3>
+                    <p>Berkomitmen untuk masa depan pertanian Indonesia yang inovatif, berkelanjutan, dan sejahtera.</p>
+                    <p>&copy; 2025 Lembaga Pertanian XYZ. Hak Cipta Dilindungi.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Tautan Cepat</h3>
+                    <ul>
+                        <li><a href="index.html#beranda">Beranda</a></li>
+                        <li><a href="index.html#tentang-kami">Tentang Kami</a></li>
+                        <li><a href="index.html#program">Program & Layanan</a></li>
+                        <li><a href="index.html#publikasi">Publikasi</a></li>
+                        <li><a href="index.html#berita-acara">Berita & Acara</a></li>
+                        <li><a href="index.html#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Informasi Kontak</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Pertanian Jaya No. 123, Kota Makmur</p>
+                    <p><i class="fas fa-phone"></i> (021) 12345678</p>
+                    <p><i class="fas fa-envelope"></i> info@lembaga-pertanianxyz.org</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
