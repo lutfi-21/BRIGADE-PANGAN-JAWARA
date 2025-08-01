@@ -868,7 +868,7 @@ footer {
 
 .marquee {
     display: inline-block;
-    animation: scroll-left 25s linear infinite; /* Animasi, kecepatan 40s, linear, berulang tak terbatas */
+    animation: scroll-left 20s linear infinite; /* Animasi, kecepatan 40s, linear, berulang tak terbatas */
 }
 
 /* Animasi keyframes */
