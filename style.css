@@ -855,3 +855,28 @@ footer {
         padding: 40px 0;
     }
 }
+
+/* --- CSS for Scrolling Text (Marquee) --- */
+.announcement-bar {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 10px 0;
+    overflow: hidden; /* Penting! Menyembunyikan teks di luar container */
+    position: relative;
+    white-space: nowrap; /* Mencegah teks turun ke baris baru */
+}
+
+.marquee {
+    display: inline-block;
+    animation: scroll-left 40s linear infinite; /* Animasi, kecepatan 40s, linear, berulang tak terbatas */
+}
+
+/* Animasi keyframes */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%); /* Mulai dari luar container di sebelah kanan */
+    }
+    100% {
+        transform: translateX(-100%); /* Berakhir di luar container di sebelah kiri */
+    }
+}
