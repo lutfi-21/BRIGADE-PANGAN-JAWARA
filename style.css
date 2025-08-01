@@ -294,6 +294,67 @@ section:last-of-type {
     margin-bottom: 10px;
 }
 
+/* --- Thank You Page Specific Styles --- */
+.thank-you-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 180px); /* Sesuaikan tinggi agar konten berada di tengah, kurangi tinggi header/footer */
+    text-align: center;
+    background-color: var(--background-light);
+    padding: 50px 20px;
+}
+
+.thank-you-section .icon {
+    font-size: 5rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    animation: bounceIn 1s ease-out;
+}
+
+.thank-you-section h2 {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.thank-you-section p {
+    font-size: 1.2rem;
+    color: var(--light-text-color);
+    max-width: 700px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+/* Animasi untuk ikon */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsif sederhana untuk halaman terima kasih */
+@media (max-width: 768px) {
+    .thank-you-section h2 {
+        font-size: 2.2rem;
+    }
+    .thank-you-section p {
+        font-size: 1rem;
+    }
+    .thank-you-section .icon {
+        font-size: 4rem;
+    }
+}
+
 /* Stats Section */
 .stats-section {
     background-color: var(--primary-color);
